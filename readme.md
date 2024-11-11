@@ -78,10 +78,20 @@ CREATE TABLE livro(
 CREATE TABLE extra(
     id INT PRIMARY KEY AUTO_INCREMENT,
     produtos(150) NOT NULL,
-    ano_publicacao VARCHAR (50), 
-    quantidade INT(20),
-    preco 
+    ano_publicacao VARCHAR NOT NULL(50), 
+    quantidade INT(20) NOT NULL,
+    preco DOUBLE NOT NULL
     
    );
+
+```
+
+#### passo 2: editar tabelas usando 'ALTER'
+Após a criação da tabela, podemos adicionar novos
+campos.Vamos adicionar uma coluna 'email' na tabela 'autor'
+
+```SQL
+ALTER TABLE autor
+ADD COLUMN email VARCHAR(100);
 
 ```
