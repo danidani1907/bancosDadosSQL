@@ -23,3 +23,51 @@ criação de tabela, chaves e até manipulação/consulta de dados.
  USE biblioteca;
 
 ```
+
+#### 1.2 Criando a tabela 'editora'
+
+```
+CREATE TABLE editora (
+    id_editora INT PRIMARY KEY AUTO_INCREMENT,
+    nome_editora VARCHAR(100) NOT NULL,
+    pais VARCHAR(50)
+);
+
+```
+
+
+#### 1.3 Criando a tabela 'autor'
+
+```
+CREATE TABLE autor(
+    id_autor INT PRIMARY KEY AUTO_INCREMENT,
+    nome_autor VARCHAR(200) ,
+    data_nascimento DATE
+);
+
+```
+
+#### 1.4 Criando a tabela 'assunto'
+
+```
+CREATE TABLE assunto(
+    id_assunto INT PRIMARY KEY AUTO_INCREMENT,
+    descricao_assunto VARCHAR(200) NOT NULL
+   );
+
+```
+
+
+#### 1.5 Criando a tabela 'livro'
+
+```
+CREATE TABLE livro(
+    id_livro INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(150) NOT NULL,
+    ano_publicacao YEAR, 
+    FOREING KEY(id_editora) REFERENCES editora(id_editora),
+    FOREING KEY(id_autor) REFERENCES editora(id_autor),
+    FOREING KEY(id_assunto) REFERENCES editora(id_assunto),
+   );
+
+```
