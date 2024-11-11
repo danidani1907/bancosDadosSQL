@@ -71,3 +71,17 @@ CREATE TABLE livro(
    );
 
 ```
+
+#### 1.6 Criando a tabela uma tabela extra
+
+```
+CREATE TABLE extra(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    produtos(150) NOT NULL,
+    ano_publicacao VARCHAR (50), 
+    quantidade INT(20),
+    preco 
+    
+   );
+
+```
