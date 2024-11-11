@@ -12,3 +12,14 @@ criação de tabela, chaves e até manipulação/consulta de dados.
  * _UPDATE_ para atualizar os registros
  * _DELETE_ para remover os registros
  * _SELECT_ para consultar e vizualizar dados 
+
+ ## Passo 1: criação do banco de dados e das Tabelas
+
+ #### 1.1 criando o DB
+
+ ```
+
+ CREATE DATABASE biblioteca;
+ USE biblioteca;
+
+```
